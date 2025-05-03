@@ -3,12 +3,13 @@
 ## How to Run This Extension
 
 1. Clone this repository:
-
->git clone https://github.com/Deepaksingh126/tabby.git
-
+```
+git clone https://github.com/Deepaksingh126/tabby.git
+```
 2. Open Chrome and go to:
->chrome://extensions/
-
+```
+chrome://extensions/
+```
 3. Turn on **Developer mode** (top right)
 
 4. Click on **Load unpacked**
