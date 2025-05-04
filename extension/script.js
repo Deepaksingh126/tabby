@@ -5,6 +5,50 @@
 
 const tabs = [
     {
+        url: 'https://leetcode.com/problemset/?page=1&sorting=W3sic29ydE9yZGVyIjoiREVTQ0VORElORyIsIm9yZGVyQnkiOiJGUk9OVEVORF9JRCJ9XQ%3D%3D',
+        site: 'leetcode',
+        type: 'problem solving'
+    }, {
+        url: 'https://grok.com',
+        site: 'grok-chat',
+        type: 'AI'
+    },
+    {
+        url: 'https://medium.com/',
+        site: 'medium',
+        type: 'article'
+    },
+    {
+        url: 'https://stackoverflow.com/',
+        site: 'stackoverflow',
+        type: 'help'
+    },
+    {
+        url: 'https://www.freecodecamp.org/',
+        site: 'freecodecamp',
+        type: 'learning'
+    },
+    {
+        url: 'https://www.w3schools.com/',
+        site: 'w3schools',
+        type: 'documentation'
+    },
+    {
+        url: 'https://codepen.io/',
+        site: 'codepen',
+        type: 'playground'
+    },
+    {
+        url: 'https://npmjs.com/',
+        site: 'npm',
+        type: 'packages'
+    },
+    {
+        url: 'https://chat.openai.com/',
+        site: 'chatgpt',
+        type: 'AI'
+    },
+    {
         url: 'https://deepak-dev-wheat.vercel.app/',
         site: 'deepak.dev',
         type: 'portfolio'
@@ -20,9 +64,9 @@ const tabs = [
         type: 'productivity'
     },
     {
-        url: 'https://in.pinterest.com/',
+        url: 'https://in.pinterest.com/search/pins/?q=posters&rs=typed',
         site: 'pinterest',
-        type: 'images '
+        type: ''
     },
     {
         url: 'https://tailwindcss.com/docs/installation/using-vite',
@@ -30,7 +74,7 @@ const tabs = [
         type: 'production'
     },
     {
-        url: 'https://github.com/deepaksingh126',
+        url: 'https://github.com',
         site: 'github',
         type: 'my portfoilio'
     },
@@ -63,24 +107,9 @@ const tabs = [
         site: 'localhost:8000',
         type: 'production'
     },
-    {
-        url: 'https://leetcode.com',
-        site: 'leetcode',
-        type: 'problem solving'
-    },
-    {
-        url: 'https://grok.com/',
-        site: 'grok-chat',
-        type: 'AI'
-    },
-    {
-        url: 'https://medium.com/',
-        site: 'medium',
-        type: 'article'
-    },
 ]
 
-//all of the code related to DOM manipulation should be written in this function so the script will not run before rendering the page and works well
+//all of the code related to DOM manipulation should be written in this function so the script will not run before rendering the page and 
 
 document.addEventListener("DOMContentLoaded", function () {
     const allTab = document.getElementById('allTabs')
@@ -88,8 +117,9 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let i = 0; i < tabs.length; i++) {
         allTab.innerHTML += `<div class="tab" id="tab">
             <a href="${tabs[i].url}">
-            <img src="https://www.google.com/s2/favicons?sz=64&domain_url=${tabs[i].url}" alt="${tabs[i].site} favicon">
-                <h1> ${tabs[i].site}</h1>
+            <div class="tabName">
+             <img src="https://www.google.com/s2/favicons?sz=64&domain_url=${tabs[i].url}" alt="${tabs[i].site} favicon">
+                <h1> ${tabs[i].site}</h1></div>
                 <p class="url">${tabs[i].url}</p>
                 <p class="type">${tabs[i].type}</p>                
             </a>
@@ -126,16 +156,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const appearbtn = document.getElementById('appearButton');
     const sectionBody = document.getElementById('sectionBody');
 
+    sectionBody.style.opacity = '0';//for fixing double tap in intializing
     sectionBody.style.display = 'none';//for fixing double tap in intializing
 
     appearbtn.addEventListener('click', () => {
-        if (sectionBody.style.display === 'none') {
-            sectionBody.style.display = 'block';
+        if (sectionBody.style.opacity === '0') {
+            sectionBody.style.opacity = '1';
             appearbtn.style.left = '-50px';
             appearbtn.style.opacity = 0.5;
+            sectionBody.style.display = 'block';//for fixing double tap in intializing
+
         } else {
             console.log('ehheh')
-            sectionBody.style.display = 'none';
+            sectionBody.style.opacity = '0';
             appearbtn.style.left = '0px';
             appearbtn.style.opacity = 1;
         }
