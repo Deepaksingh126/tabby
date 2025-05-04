@@ -15,7 +15,7 @@ body {
 
 /* circle that will appear first and help in toggling on and off the page */
 .circle {
-    background-color: #7e05ff;
+    background-color: #c300ff;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -30,16 +30,20 @@ body {
     justify-content: center;
     transition: all 1s;
     cursor: pointer;
+    z-index: 100;
 }
 
 /* warpper of the page */
 
 section {
+    display: none;
     background: #ffffff;
-    background: linear-gradient(179deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgb(217, 140, 255) 100%, rgba(255, 0, 0, 0) 0%);
+    background: linear-gradient(179deg, #ffffff 0%, #ffffff 0%, #ffffff 0%, #d98cff 100%, #ff000000 0%);
     width: 100%;
-    height: 100%;
-    transition: all 1s;
+    min-height: 70vh;
+    transition: all 0.4s;
+    padding-bottom: 20vh;
+    overflow-x: hidden;
 }
 
 /* search bar  */
@@ -54,7 +58,7 @@ div.search {
 }
 
 div>input {
-    border: 2px solid rgb(178, 71, 255);
+    border: 2px solid #c300ff;
     width: 500px;
     height: 35px;
     border-radius: 20px;
@@ -81,28 +85,24 @@ div>input {
 
 .tab {
     display: inline-block;
-    padding: 4px;
+    padding: 10px 8px;
     box-shadow: 0px 0px 5px 0px #0000001f;
     border-radius: 12px;
-    border: rgb(201, 107, 255) solid 2px;
-
+    border: #c300ff solid 2px;
+    background-color: #c300ff09;
+    backdrop-filter: 2px;
 }
 
 .tab:hover {
     transition: all 0.1s linear;
-    background-color: rgb(195, 0, 255);
-    border: rgb(173, 1, 216) solid 2px;
-    box-shadow: 0px 0px 2px 0px rgb(129, 129, 129);
+    background-color: #c300ff;
+    border: #c300ff solid 2px;
+    box-shadow: 0px 0px 4px 0px #818181;
 }
-.tab img{
-    width: 22px;
-    height: 22px;
-}
+
 .tab>a {
     text-decoration: none;
     color: black;
-
-
 }
 
 .tab:hover a {
@@ -110,20 +110,32 @@ div>input {
 }
 
 
+.tab .tabName {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tab img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
 .tab h1 {
-    border-left: 2px solid rgb(0, 0, 0);
-    padding: 4px 4px 4px 12px;
-    margin: 10px;
+    border-left: 1px solid rgb(0, 0, 0);
+    padding: 2px 2px 2px 12px;
+    margin: 6px;
     font-size: 16px;
     font-weight: 800;
 }
 
 .tab:hover h1 {
-    border-left: 2px solid #ffffff;
+    border-left: 1px solid #ffffff;
 }
 
+
 .tab .url {
-    margin: 10px 4px 4px 10px;
     color: rgb(123, 0, 255);
     width: 150px;
     height: 10px;
