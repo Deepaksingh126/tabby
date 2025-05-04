@@ -35,9 +35,8 @@ body {
 /* warpper of the page */
 
 section {
-    /* background-color: #fff7ed; */
     background: #ffffff;
-background: linear-gradient(179deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgb(217, 140, 255) 100%, rgba(255, 0, 0, 0) 0%);
+    background: linear-gradient(179deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgb(217, 140, 255) 100%, rgba(255, 0, 0, 0) 0%);
     width: 100%;
     height: 100%;
     transition: all 1s;
@@ -51,7 +50,7 @@ div.search {
     align-items: center;
     justify-content: center;
     background-color: #9900ff5a;
-    
+
 }
 
 div>input {
@@ -63,10 +62,8 @@ div>input {
     outline: none;
 }
 
-
-
-
 /* wrapper of all the tabs  */
+
 .allTabs {
     width: 100vw;
     display: flex;
@@ -88,24 +85,24 @@ div>input {
     box-shadow: 0px 0px 5px 0px #0000001f;
     border-radius: 12px;
     border: rgb(201, 107, 255) solid 2px;
-    
+
 }
-.tab:hover{
+
+.tab:hover {
     transition: all 0.1s linear;
     background-color: rgb(195, 0, 255);
     border: rgb(173, 1, 216) solid 2px;
     box-shadow: 0px 0px 2px 0px rgb(129, 129, 129);
-    
 }
-
 
 .tab>a {
     text-decoration: none;
     color: black;
-    
+
 
 }
-.tab>a:hover{
+
+.tab>a:hover {
     color: rgb(255, 255, 255);
 }
 
@@ -115,7 +112,7 @@ div>input {
     padding: 4px 4px 4px 12px;
     margin: 10px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 
@@ -123,16 +120,18 @@ div>input {
     margin: 10px 4px 4px 10px;
     color: rgb(123, 0, 255);
     width: 150px;
-    height: 8px;
+    height: 10px;
     font-size: 8px;
     overflow: hidden;
     text-decoration: underline;
 }
 
+.tab:hover .url {
+    color: white;
+}
 
 p.type {
     border-radius: 12px;
-    /* border: 1px solid black; */
     color: rgb(174, 0, 255);
     padding: 2px 6px;
     display: inline-block;
