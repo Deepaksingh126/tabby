@@ -102,19 +102,22 @@ div>input {
 
 }
 
-.tab>a:hover {
+.tab:hover a {
     color: rgb(255, 255, 255);
 }
 
 
 .tab h1 {
-    border-left: 1px solid rgb(0, 0, 0);
+    border-left: 2px solid rgb(0, 0, 0);
     padding: 4px 4px 4px 12px;
     margin: 10px;
     font-size: 16px;
     font-weight: 800;
 }
 
+.tab:hover h1 {
+    border-left: 2px solid #ffffff;
+}
 
 .tab .url {
     margin: 10px 4px 4px 10px;
