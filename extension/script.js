@@ -88,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let i = 0; i < tabs.length; i++) {
         allTab.innerHTML += `<div class="tab" id="tab">
             <a href="${tabs[i].url}">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain_url=${tabs[i].url}">
                 <h1> ${tabs[i].site}</h1>
                 <p class="url">${tabs[i].url}</p>
                 <p class="type">${tabs[i].type}</p>                

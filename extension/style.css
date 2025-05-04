@@ -94,7 +94,10 @@ div>input {
     border: rgb(173, 1, 216) solid 2px;
     box-shadow: 0px 0px 2px 0px rgb(129, 129, 129);
 }
-
+.tab img{
+    width: 22px;
+    height: 22px;
+}
 .tab>a {
     text-decoration: none;
     color: black;
