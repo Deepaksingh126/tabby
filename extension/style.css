@@ -40,7 +40,7 @@ section {
     background: #ffffff;
     background: linear-gradient(179deg, #ffffff 0%, #ffffff 0%, #ffffff 0%, #d98cff 100%, #ff000000 0%);
     width: 100%;
-    min-height: 70vh;
+    min-height: 100vh;
     transition: all 0.4s;
     padding-bottom: 20vh;
     overflow-x: hidden;
