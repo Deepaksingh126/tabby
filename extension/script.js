@@ -155,12 +155,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const appearbtn = document.getElementById('appearButton');
     const sectionBody = document.getElementById('sectionBody');
+    const instruct = document.getElementById('instruct');
 
     sectionBody.style.opacity = '0';//for fixing double tap in intializing
     sectionBody.style.display = 'none';//for fixing double tap in intializing
 
     appearbtn.addEventListener('click', () => {
         if (sectionBody.style.opacity === '0') {
+            instruct.style.display = 'none';
             sectionBody.style.opacity = '1';
             appearbtn.style.left = '-50px';
             appearbtn.style.opacity = 0.5;
