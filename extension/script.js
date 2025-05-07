@@ -49,7 +49,7 @@ const tabs = [
         type: 'AI'
     },
     {
-        url: 'https://deepak-dev-wheat.vercel.app/',
+        url: 'hhttps://deepak-n4xykhnx5-deepaks-projects-a6a30db1.vercel.app/',
         site: 'deepak.dev',
         type: 'portfolio'
     },
